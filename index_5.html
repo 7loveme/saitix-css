@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="dark" data-dark-theme="dark_dimmed">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css"
+      rel="stylesheet"
+    />
+    <title>Primer CSS</title>
+  </head>
+  <body>
+    <div style="max-width: 1200px" class="mx-auto py-1 px-2">
+      <!-- Start Navbar -->
+      <div>
+        <nav class="UnderlineNav" aria-label="Nav bar">
+          <div class="UnderlineNav-body">
+            <a
+              class="UnderlineNav-item app-link"
+              href="index.html"
+              aria-current="page"
+              onclick="handleClick(this)"
+              >Главная</a
+            >
+            <a
+              class="UnderlineNav-item app-link"
+              href="index_2.html"
+              onclick="handleClick(this)"
+              >Преимущества</a
+            >
+            <a
+              class="UnderlineNav-item app-link"
+                href="index_3.html"
+              onclick="handleClick(this)"
+              >Недостатки</a
+            >
+              <a
+              class="UnderlineNav-item app-link"
+              href="index_4.html"
+              onclick="handleClick(this)"
+              > Ссылки на фреймворки</a
+            >
+              <a
+              class="UnderlineNav-item app-link"
+              href="index_5.html"
+              onclick="handleClick(this)"
+              >Обратная связь</a
+            >
+              <a
+              class="UnderlineNav-item app-link"
+             href="index_6.html"
+              onclick="handleClick(this)"
+              >Контакты</a
+            >
+          </div>
+            <br>
+            <br>
+            <br>
+          <div class="UnderlineNav-actions">
+            <a href="788998@gmail.com" class="btn btn-sm">Войти</a>
+          </div>
+        </nav>
+      </div>
+         <div id="newsletter">
+        <h2 class="py-2 h3-mktg">Задайте вопрос здесь</h2>
+        <form>
+          <div class="form-group">
+            <div class="form-group-header">
+              <label for="example-text">Email </label>
+            </div>
+            <div class="form-group-body">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Email адрес"
+                id="example-text"
+              />
+            </div>
+              
+          </div>
+              <div class="form-group">
+            <div class="form-group-header">
+              <label for="example-text">Проблема/Вопрос</label>
+            </div>
+            <div class="form-group-body">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Задайте нам вопрос здесь!"
+                id="example-text"
+              />
+            </div>
+              
+          </div>
+          <button class="btn btn-block btn-primary" style="max-width: 440px">
+            Submit
+          </button>
+        </form>
+      </div>
+        
+        <br>
+        <br>
+        <br>
+        <!-- Start Footer -->
+      <div>
+        <p class="text-center py-4">
+          Сделано
+          <a href="https://vk.com/7loveme">lvm</a>
+        </p>
+      </div>
+      <!-- End Footer -->
+    </div>
+
+    <script>
+      function handleClick(e) {
+        document.querySelectorAll('.app-link').forEach((x) => {
+          x.removeAttribute('aria-current');
+        });
+        e.setAttribute('aria-current', 'page');
+      }
+
+      function handlePopover() {
+        const popup = document.querySelector('.app-popover');
+
+        if (popup.style.display === 'none') {
+          popup.style.display = 'block';
+        } else {
+          popup.style.display = 'none';
+        }
+      }
+
+      function handlePopover2() {
+        const popup = document.querySelector('.app-popover2');
+
+        if (popup.style.display === 'none') {
+          popup.style.display = 'block';
+        } else {
+          popup.style.display = 'none';
+        }
+      }
+    </script>
+  </body>
+</html>

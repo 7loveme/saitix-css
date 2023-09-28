@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="dark" data-dark-theme="dark_dimmed">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css"
+      rel="stylesheet"
+    />
+    <title>Primer CSS</title>
+  </head>
+  <body>
+    <div style="max-width: 1200px" class="mx-auto py-1 px-2">
+      <!-- Start Navbar -->
+      <div>
+        <nav class="UnderlineNav" aria-label="Nav bar">
+          <div class="UnderlineNav-body">
+            <a
+              class="UnderlineNav-item app-link"
+              href="index.html"
+              aria-current="page"
+              onclick="handleClick(this)"
+              >Главная</a
+            >
+            <a
+              class="UnderlineNav-item app-link"
+              href="index_2.html"
+              onclick="handleClick(this)"
+              >Преимущества</a
+            >
+            <a
+              class="UnderlineNav-item app-link"
+                href="index_3.html"
+              onclick="handleClick(this)"
+              >Недостатки</a
+            >
+              <a
+              class="UnderlineNav-item app-link"
+              href="index_4.html"
+              onclick="handleClick(this)"
+              > Ссылки на фреймворки</a
+            >
+              <a
+              class="UnderlineNav-item app-link"
+              href="index_5.html"
+              onclick="handleClick(this)"
+              >Обратная связь</a
+            >
+              <a
+              class="UnderlineNav-item app-link"
+              href="index_6.html"
+              onclick="handleClick(this)"
+              >Контакты</a
+            >
+          </div>
+          <div class="UnderlineNav-actions">
+            <a href="mailto:bonarhyme@gmail.com" class="btn btn-sm">Войти</a>
+          </div>
+        </nav>
+      </div>
+      <!-- End Navbar -->
+
+      <!-- Start Hero -->
+      <div id="hero" class="py-8 blankslate">
+        <div
+          style="width: 90%; max-height: 200px"
+          class="mx-auto border p-3 rounded-2"
+        >
+          <h1>Самые популярные CSS фреймворки </h1>
+          <h3>        
+        <p>Вот топ-3 CSS фреqмворков</p></h3>
+               
+            <details
+              class="details-reset details-overlay details-overlay-light"
+            >
+              <summary class="btn" aria-haspopup="dialog">Посмотреть</summary>
+              <details-dialog
+                class="Box Box--overlay d-flex flex-column anim-fade-in fast"
+              >
+                <div class="Box-header">
+                  <button
+                    class="Box-btn-octicon btn-octicon float-right"
+                    type="button"
+                    aria-label="Close dialog"
+                    data-close-dialog
+                  >
+                    <!-- <%= octicon "x" %> -->
+                    <svg
+                      class="octicon octicon-x"
+                      viewBox="0 0 12 16"
+                      version="1.1"
+                      width="12"
+                      height="16"
+                      aria-hidden="true"
+                      
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"
+                      ></path>
+                    </svg>
+                  </button>
+                  <h3 class="Box-title">Популярные CSS фреймворки</h3>
+                </div>
+                <div class="overflow-auto">
+                   
+                  <ul>
+                    <li class="Box-row">
+                      <img
+                        class="avatar v-align-middle mr-2"
+                        src="https://ncarb.github.io/bootstrap/assets/img/bootstrap-stack.png"
+                        alt="Bootstrao"
+                        width="24"
+                        height="24"
+                           
+                      />
+                      Bootstrap
+                    </li>
+                    <li class="Box-row border-bottom">
+                      <img
+                        class="avatar v-align-middle mr-2"
+                        src="https://camo.githubusercontent.com/363242675617648bfbedd1610f89ac28df0f9e1bac8749d83109fafdf8524fff/68747470733a2f2f67772e616c697061796f626a656374732e636f6d2f7a6f732f726d73706f7274616c2f4b4470677667754d704766716148506a6963524b2e737667"
+                        alt="Ant Design "
+                        width="24"
+                        height="24"
+                      />
+                      Ant Design 
+                    </li>
+                    <li class="Box-row border-bottom">
+                      <img
+                        class="avatar v-align-middle mr-2"
+                        src="https://tomich.org/images/t-with-circle.svg"
+                        alt="Tachyons"
+                        width="24"
+                        height="24"
+                          
+                      />
+                     Tachyons 
+                    </li>
+                  </ul>
+                </div>
+                <div class="Box-footer">
+                  <button type="button" class="btn btn-block" data-close-dialog>
+                    Закрыть
+                  </button>
+                </div>
+              </details-dialog>
+            </details>
+            <br>
+             <br>
+             <br>
+             <br>
+             <br>
+            <div id="about">
+        <h2>
+          Что такое фреймворки?
+        
+        </h2>
+
+        <div>
+          <!-- Colorful TimelineItem Badge -->
+          <div class="TimelineItem">
+            <div
+              class="TimelineItem-badge color-bg-danger-emphasis color-fg-on-emphasis"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="octicon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM5 8a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zM5.32 9.636a.75.75 0 011.038.175l.007.009a1.82 1.82 0 00.35.31c.264.178.683.37 1.285.37.602 0 1.02-.192 1.285-.371a1.82 1.82 0 00.35-.31l.007-.008a.75.75 0 011.222.87l-.614-.431c.614.43.614.431.613.431v.001l-.001.002-.002.003-.005.007-.014.019a1.989 1.989 0 01-.184.213 3.32 3.32 0 01-.53.445A3.766 3.766 0 018 12c-.946 0-1.652-.308-2.126-.63a3.323 3.323 0 01-.673-.604 1.975 1.975 0 01-.042-.053l-.014-.02-.005-.006-.002-.003v-.002h-.001l.613-.432-.614.43a.75.75 0 01.183-1.044z"
+                ></path>
+              </svg>
+            </div>
+              <div class="TimelineItem-body">
+                <h2><p class = justify> CSS-фреймворк — фреймворк, созданный для упрощения работы верстальщика, быстроты разработки и исключения максимально возможного числа ошибок вёрстки (проблемы совместимости различных версий браузеров и т. д.). Как и библиотеки скриптовых языков программирования, CSS-библиотеки, обычно имеющие вид внешнего css-файла, «подключаются» к проекту (добавляются в заголовок веб-страницы). Более функциональные фреймворки также имеют больше функций и дополнительных функций на основе JavaScript, но в основном ориентированы на дизайн и ориентированы на интерактивные шаблоны пользовательского интерфейса. Эта деталь отличает фреймворки CSS от других фреймворков JavaScript.</p></h2>
+                
+           
+          </div>
+         
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+         <!-- Start Youtube -->
+      <div id="Подробнее о CSS фремворках">
+        <h2>Подробнее о CSS фремворках</h2>
+          <br>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/1J5aRqJDUv0?si=d_RQ-31pmkL8R21O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <!-- End Youtube -->
+      <br />
+      <br />
+      <br />
+      <!-- Start Footer -->
+      <div>
+        <p class="text-center py-4">
+          Сделано
+          <a href="https://vk.com/7loveme">lvm</a>
+        </p>
+      </div>
+      <!-- End Footer -->
+    </div>
+
+    <script>
+      function handleClick(e) {
+        document.querySelectorAll('.app-link').forEach((x) => {
+          x.removeAttribute('aria-current');
+        });
+        e.setAttribute('aria-current', 'page');
+      }
+
+      function handlePopover() {
+        const popup = document.querySelector('.app-popover');
+
+        if (popup.style.display === 'none') {
+          popup.style.display = 'block';
+        } else {
+          popup.style.display = 'none';
+        }
+      }
+
+      function handlePopover2() {
+        const popup = document.querySelector('.app-popover2');
+
+        if (popup.style.display === 'none') {
+          popup.style.display = 'block';
+        } else {
+          popup.style.display = 'none';
+        }
+      }
+    </script>
+  </body>
+</html>
+
+     
